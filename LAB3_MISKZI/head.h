@@ -38,7 +38,7 @@ void print_vector(const vector<vector<uint8_t> >& vect)
 // Функция для циклического сдвига байта вправо на p бит
 uint8_t circle_step(uint8_t byte, int p)
 {
-    return (byte >> p) | (byte << (4 - p));
+    return (byte << (4 - p));
 }
 
 // Функция для создания таблицы подстановки S2 из таблицы S
